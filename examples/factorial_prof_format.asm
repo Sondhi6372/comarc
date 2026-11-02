@@ -1,0 +1,22 @@
+.ORG 0
+ORI $2 $0 5
+SYSCALL
+ADD $8 $2 $0
+ORI $2 $0 1
+ORI $9 $0 2
+SLT $10 $8 $9
+BNE $10 $0 10
+ORI $11 $0 0
+ORI $12 $0 0
+SLT $10 $12 $9
+BEQ $10 $0 3
+ADD $11 $11 $2
+ADDI $12 $12 1
+BEQ $0 $0 -5
+ADD $2 $11 $0
+ADDI $9 $9 1
+BEQ $0 $0 -12
+ADD $4 $2 $0
+ORI $2 $0 1
+SYSCALL
+HALT

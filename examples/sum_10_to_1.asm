@@ -1,0 +1,7 @@
+.ORG 0
+ORI $2 $0 10
+ORI $3 $0 0
+ADD $3 $2 $3
+ADDI $2 $2 -1
+BNE $0 $2 -3
+HALT

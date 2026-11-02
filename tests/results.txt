@@ -1,0 +1,12 @@
+factorial 0..12        13 / 13   PASS
+factorial overflow      1 / 1    PASS
+factorial invalid       1 / 1    PASS
+nCk n<=26             378 / 378  PASS
+nCk 27..33            217 / 217  PASS
+nCk invalid             5 / 5    PASS
+professor format       14 / 14   PASS
+exception handler       1 / 1    PASS
+command line            3 / 3    PASS
+----------------------------------------
+TOTAL                 633 / 633  PASS
+(longest nCk run: 5543 instructions)
